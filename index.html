@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>連打測定</title>
-</head>
-<body>
-    <button onclick="start()">スタート</button>
-    <div id="result"></div>
-
-    <script>
-        let startTime, endTime, count = 0;
-
-        function start() {
-            startTime = new Date();
-            count = 0;
-            document.body.addEventListener('keydown', () => {
-                count++;
-            });
-        }
-
-        function end() {
-            endTime = new Date();
-            const elapsedTime = (endTime - startTime) / 1000;
-            document.getElementById('result').textContent = `あなたは${count}回、${elapsedTime}秒で連打しました。`;
-        }
-    </script>
-</body>
-</html>
+<marquee>この文字が動きます！</marquee>
+<h1>  
+/\___/\  
+( o.o )  
+> ^ <  
+</h1>
